@@ -1,6 +1,6 @@
 ### Clean slate by deleting all nodes
 ```cypher
-match (n)-[r]-() delete n, r;
+match (n)-[r]-() delete n, r
 ```
 
 ### Import data from the folder (copied inside the container)
@@ -8,13 +8,12 @@ match (n)-[r]-() delete n, r;
 LOAD CSV WITH HEADERS FROM "file:////datasets/test.csv" AS line
 MERGE (n:MyNode {Name: line.Source})
 MERGE (m:MyNode {Name: line.Target})
-MERGE (n) -[:TO {dist: toInteger(line.distance)}]-> (m)
-match (n)-[r]-(m) return n, r, m;
+MERGE (n) -[:TO {dist: toInteger(line.distance)}]-> (m)  
 ```
 
 ### Clean again
 ```cypher
-match (n)-[r]-() delete n, r;
+match (n)-[r]-() delete n, r
 ```
 
 ### Import the terrorist dataset
@@ -29,10 +28,10 @@ MERGE(c)<-[:IS_FROM]-(a);
 
 ### Inspect 25 nodes
 ```cypher
-match (n) return n limit 25;
+match (n) return n limit 25
 ```
 
 ### Inspect 1000 nodes (after updating the max nodes in settings)
 ```cypher
-match (n) return n limit 1000;
+match (n) return n limit 1000
 ```

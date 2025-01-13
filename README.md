@@ -30,7 +30,7 @@ This repository contains tutorials and examples for working with graph data usin
 
 Run `setup.sh` to set up the environment. Make sure Docker is running (either desktop or daemon).
 
-### Start the Neo4j container (then go to localhost:8080)
+### Start the Neo4j container (then go to localhost:7474)
 `docker run --name neo4j-coursera -p 7474:7474 -p 7687:7687 -d -e NEO4J_AUTH=none pramonettivega/neo4j-coursera`
 
 ### Start the GraphX container

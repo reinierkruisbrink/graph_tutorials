@@ -5,16 +5,21 @@ This repository contains tutorials and examples for working with graph data usin
 ## Contents
 
 ### Neo4j
-- **1-getting_started.cql**: Introduction to Neo4j and basic setup.
-- **2-modifying_graphs.cql**: How to modify graphs in Neo4j.
-- **3-importing_data.cql**: Importing data into Neo4j.
-- **4-basic_queries.cql**: Basic queries in Neo4j.
-- **5-path_analytics.cql**: Path analytics using Neo4j.
-- **6-connectivity_analytics.cql**: Connectivity analytics using Neo4j.
-- **7-assignment.cql**: Assignment for practicing Neo4j queries.
+- **1-getting_started.md**
+- **2-modifying_graphs.md**
+- **3-importing_data.md**
+- **4-basic_queries.md**
+- **5-path_analytics.md**
+- **6-connectivity_analytics.md**
+- **7-assignment.md**
 
 ### GraphX
-- **...**: ...
+- **0-setup.md**
+- **1-build-a-graph.md**
+- **2-building-degree-histogram.md**
+- **3-plot-degree-histogram.md**
+- **4-connectedness-and-clustering.md**
+- **5-joining-graph-datasets.md**
 
 ## Data
 
